@@ -1,0 +1,41 @@
+This module is used to break down the users input so that synonyms may also be used in the user input. 
+
+Eg: "Make a note..." = "Create a note..."
+
+The pre-trained model seems to perform marginally better than the self-trained model. However, neither model
+can be used for the purpose at hand since both models calculate similarity score based on word usage/context
+and not the actual meaning of the word.
+
+Eg: "go" and "come" have an extremely high similarity score even though they have opposite meanings since 
+the usage of both words are extremely similar. 
+
+Two possible solutions to this problem are: 
+
+1. Register antonyms. We calculate word similarity and deduct scores severely for words that are anotnyms. 
+However, this can be a tedious process and the score to be deducted has a huge impact on the model since 
+we are no longer handling contextual word analysis (what either of the two models are meant to do).
+
+2. Register synonyms and scrap the model idea completely(since the model cannot be trusted to provide 
+efficient results in it's current state). However, this would mean that the program would depend entirely and 
+solely on the vocabulary of words we have introduced. This would also mean that we have a large collection
+of words, meaning an extremely large file that the program would have to go through for most words that are 
+fed as input. 
+
+Further action is necessary and this module cannot be used properly in the making of "Hades" as is.
+
+
+UPDATE: It is found that the "synonym_finder" file is able to accomplish the necessary task although it did 
+extra words that appear to have no relation to the word parsed as the argument.
+
+Eg: "make" = ['realise', 'establish', 'wee', 'hold', 'brand', 'ready', 'ca-ca', 'piddle', 'pass_water', 
+'take_a_crap', 'progress_to', 'nominate', 'throw', 'pee', 'make', 'urinate', 'spend_a_penny', 'take', 
+'seduce', 'induce', 'do', 'construct', 'piss', 'pretend', 'make_believe', 'hit', 'relieve_oneself', 
+'puddle', 'make_water', 'arrive_at', 'reach', 'fix', 'bring_in', 'micturate', 'take_a_leak', 'score', 
+'cause', 'shuffling', 'give', 'attain', 'pee-pee', 'create', 'produce', 'gain', 'cook', 'make_up', 'work', 
+'shuffle', 'prepare', 'crap', 'earn', 'clear', 'take_a_shit', 'lay_down', 'realize', 'build', 'have', 
+'pull_in', 'constitute', 'stool', 'get_to', 'defecate', 'shit', 'get', 'name', 'take_in', 'wee-wee', 
+'form', 'stimulate', 'draw']
+
+In order to remove the extra words, a pre-trained gensim model was used however, the results were not 
+accurate enough ("make" and "create" weren't shown to be synonyms with an 'if' similarity score of 0.8) and 
+thus was removed.
