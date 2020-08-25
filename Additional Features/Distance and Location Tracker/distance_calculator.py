@@ -70,11 +70,8 @@ def guest_tracker(my_ip, other_ip):
 
 	distance(float(my_lat),float(my_long),float(other_lat),float(other_long))
 
-my_ip="137.97.229.192"
-bonita_ip = "137.97.108.232"
-home_ip = "117.251.6.71"
-dada_ip= "106.206.19.223"
-mum_ip= "106.206.27.140"
+my_ip="<ip?"
+home_ip = "<ip>"
 
-guest_tracker(my_ip,bonita_ip)
+guest_tracker(my_ip,home_ip)
 engine.runAndWait()
