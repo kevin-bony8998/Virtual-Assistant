@@ -1,0 +1,14 @@
+Both modules work and can send sms'.
+
+However, use them during different occasions. 
+
+The twilio sender makes use of a phone number different from the one we use. Therefore, use this when using 
+the actual number is not feasible (when in danger, etc.). The twilio sender has more balance left in the 
+trial account balance as well, thereby enabling the sending of more text messages (a full trial account 
+balance can afford the sending of 1550 messages). However, the twilio sender can only send messages to TWILIO 
+VERIFIED PHONE NUMBERS. This is a major drawback and one that cannot be overcome by any means other than 
+by buying a full-fledged twilio number which is expensive. 
+
+The fast2sms sender makes use of our current number and is reliable and feasible. It can send messages to 
+any desired number as well. However, the account balance is extremely limited (a full trial account balance 
+can afford the sending of only 250 messages). 
