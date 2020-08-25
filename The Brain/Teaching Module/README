@@ -1,1 +1,3 @@
-This program works on the ability of the assistant to teach the user whatever it is that the user has requested to learn. 
+This program works on the ability of the assistant to teach the user whatever it is that the user has requested to learn. The program works by first finding the 
+extractive summary of the text extracted from the internet and then using the speech-to-text module to convey the summary to the user so that the user gets the relevant
+information in the minimum time possible.
