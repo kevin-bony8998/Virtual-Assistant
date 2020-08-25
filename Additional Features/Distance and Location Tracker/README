@@ -1,0 +1,4 @@
+This program finds the distance (in kilometers) between you and any other person whose IP address has already been 
+fed into the program. 
+
+To enhance performance, a way to find ip adresses automatically must be developed. 
