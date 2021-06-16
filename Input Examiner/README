@@ -24,8 +24,8 @@ fed as input.
 Further action is necessary and this module cannot be used properly in the making of "Hades" as is.
 
 
-UPDATE: It is found that the "synonym_finder" file is able to accomplish the necessary task although it did 
-extra words that appear to have no relation to the word parsed as the argument.
+UPDATE: It is found that the "synonym_finder" file is able to accomplish the necessary task although it also 
+shows extra words that appear to have no relation to the word parsed as the argument.
 
 Eg: "make" = ['realise', 'establish', 'wee', 'hold', 'brand', 'ready', 'ca-ca', 'piddle', 'pass_water', 
 'take_a_crap', 'progress_to', 'nominate', 'throw', 'pee', 'make', 'urinate', 'spend_a_penny', 'take', 
